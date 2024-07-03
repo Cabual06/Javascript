@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     <input type="checkbox" id="male">
+     <label for="male">Male</label><br>
+
+     <input type="checkbox" id="female">
+     <label for="female">Female</label><br><br>
+
+    <button onclick="submit()">Submit</button>
+
+    <h1 id="text"></h1>
+
+
+    <script>
+
+    function submit(){
+        
+        let male = document.getElementById("male");
+        let female = document.getElementById("female");
+        let text = document.getElementById("text");
+
+        if(male.checked){
+            text.textContent = "Male";
+        }else if(female.checked){
+            text.textContent = "Female";
+        }
+    }
+    </script>
+</body>
+</html>

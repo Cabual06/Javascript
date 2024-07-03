@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <script>
+
+        function sum(callback, x, y){
+            let result = x + y;
+            callback(result);
+        }
+
+        function display(result){
+            console.log(result);
+        }
+
+
+        ///////////////////////////////////////////
+
+        sum(display,5,10);
+
+        function minus(x,y){
+            let results = x - y;
+            return results;
+        }
+
+        console.log(minus(10,5));
+
+
+        ///////////////////////////////////////////////////
+
+        function name(callback, age){
+            callback();
+        }
+
+        function displays(age){
+
+            if(age <= 17){
+                console.log("You dont have permission");
+            }else{
+                console.log("You have permission");
+            }
+        }
+
+        name(displays,24);
+
+
+        ///////////////////////////////////////////////////
+
+        function sum(callback, x, y){
+            let result = x + y;                   
+            callback(result);                    
+        }
+
+        function displayPage(result){          
+            console.log(result);
+        }
+
+        sum(displayPage, 15,10);
+
+
+        ///////////////////////////////////////////////////
+
+        let number = [2,4,6,8,10];
+
+        function show(element){
+            console.log(element);
+        }
+
+        function double(element, index, array){
+            array[index] = element * 2;
+        }
+
+        number.forEach(double); // Double the array and Print
+        number.forEach(show);   // Print the arrays
+
+        ///////
+
+        let numbers = [4,8,12,16,20];
+
+        console.log(numbers);
+
+        ///////////////////////////////////////////////////
+
+        let num = 10;
+
+        for(let i = 0; i < num; i++){
+            console.log("Hello");
+        }
+
+    </script> -->
+
+    <script>
+
+        class animals{
+
+        }
+
+        class dog extends animals{
+            constructor(name){
+                super();            // cant put properties in dog1 if your not using super();
+                this.name = name;
+            }
+        }
+
+        class cat extends animals{
+            name = "Cattie";    
+        }
+
+
+        const dog1 = new dog("doggie");
+        console.log(dog1.name);
+
+        /////////////////////////
+
+        const cat1 = new cat("catties");
+        console.log(cat1.name);
+    </script>
+</body>
+</html>
