@@ -1,26 +1,6 @@
-class animals{
-    
-    constructor(name){
-        this.name = name;
-    }
-    eat(){
-        console.log("Animals are eating");
-    }
-}
+let fruits = ["Banana", "Coconut"];
 
-class dog extends animals{
-    constructor(name){
-        super(name);
-    }
-}
+fruits.unshift("Apple");
 
-class cat extends animals{
-    constructor(name){
-        super(name);
-    }
-}
+console.log(fruits);
 
-const dog1 = new dog("Doggie");
-
-console.log(dog1);
-dog1.eat();
