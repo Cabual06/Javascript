@@ -1,6 +1,9 @@
 // function = a section of reusable code. Declare code once, use it whenever you want. Call the function to execute the code.Call
 // returning variable is preferable than setting global variables
 
+
+// return function = store the result in the variable
+
 function happyBirthday(userName, age){   // Parameters
 
     console.log(`Happy Birthday ${userName}`);
@@ -178,3 +181,26 @@ function add(x, y){
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Without using return function
+
+function add(a,b){
+    let result = a + b;
+}
+
+const result = add(5,7);
+
+console.log(result);        // Undefined
+
+
+///////////////////////////////////
+
+// function can use function of another function.. // use return 
+
+function sample(){
+    const randomNumber2 = sample2();
+    console.log(randomNumber2);
+}
+
+function sample2(){
+    return Math.floor(Math.random() * 100);
+}

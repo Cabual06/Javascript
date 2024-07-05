@@ -16,9 +16,9 @@ They allow you to select one or multiple HTML elements from the DOM.
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-// getELementById() Takes element by TagName //
+/* getELementById("");  id=""*/ 
 
-const myHeading = document.getElementById('my-heading');
+const myHeading = document.getElementById('my-heading');  // no need to add (.)
 
 myHeading.style.backgroundColor = "red";
 myHeading.style.textAlign = "center";
@@ -27,7 +27,7 @@ myHeading.style.fontSize = "50px";
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-// getELementsByClassName() Takes element by CLassName //
+/* getElementsByClassName("");  class="" */
 
 const fruits = document.getElementsByClassName('fruits');
 
@@ -44,14 +44,17 @@ fruits[2].style.backgroundColor = "orange";
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-// document.getElementsByTagName(); // 
+/* getElementsByTagName(""); tagname: h1, p, li*/
 
 //Takes element by TagName example h1,h2,h3,h4,h5
 
 const h2Elements = document.getElementsByTagName("h2");
+const h3Elements = document.getElementsByTagName("h3");
+const h4Elements = document.getElementsByTagName("h4");
 
 
 // h2Elements[0].style.backgroundColor = "violet"   // Choose using index = [0]
+
 
 // Using enhance for loop
 
@@ -74,6 +77,7 @@ listItems[5].style.backgroundColor = "lightpink";
 ///////////////////////////////////////////////////////////////////////////////////
 
  // document.querySelector(); // 
+
  //Select the first matching element
 
 const element = document.querySelector(".fruits"); // select the class of fruits
@@ -97,3 +101,13 @@ foods.forEach(food => {
 // foods[1].style.backgroundColor = "orange";
 // foods[2].style.backgroundColor = "brown";
 
+
+//////////////////////////////////////////////////////
+
+
+let object = document.querySelectorAll("div"); // (".class") ("#id") ("div")
+
+
+for(let i = 0; i < object.length; i++){
+    object[i].style.backgroundColor = "yellow";
+}

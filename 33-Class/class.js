@@ -14,7 +14,7 @@ class Product{
     //Create function inside the class. Don't need to use function keyword
 
     displayProduct(){
-        console.log(`Product: ${this.name}`);
+        console.log(`Product: ${this.name}`);       // can use the properties of the constructor
         console.log(`Price: $${this.price}`);
     }
 

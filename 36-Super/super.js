@@ -3,6 +3,10 @@
 // this = this object
 // super = the parent
 
+// Call the super() constructor of Parent class to use this. keyword to anoteher class
+
+
+
 class Animal{
     constructor(){
 
@@ -12,7 +16,7 @@ class Animal{
 class Rabbit extends Animal{
     constructor(name, age, runSpeed){
 
-        super();                // Call the super constructor of Parent class to use this. keyword
+        super();                
 
         this.name = name;
         this.age = age;
