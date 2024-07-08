@@ -7,7 +7,7 @@ They allow you to select one or multiple HTML elements from the DOM.
 /*
 
 1. document.getElementById();               // ELEMENT OR NUll
-2. document.getElementsByCLassName();         // HTML COLLECTION
+2. document.getElementsByCLassName();       // HTML COLLECTION
 3. document.getElementsByTagName();         // HTML COLLECTION
 4. document.querySelector();                // FIRST ELEMENT OR NUll
 5. document.querySelectorAll();             // NODELIST
