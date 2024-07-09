@@ -16,7 +16,7 @@ They allow you to select one or multiple HTML elements from the DOM.
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-/* getELementById("");  id=""*/ 
+/* getELementById("");  id=""*/ // NO (#) needed
 
 const myHeading = document.getElementById('my-heading');  // no need to add (.)
 
@@ -27,7 +27,7 @@ myHeading.style.fontSize = "50px";
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-/* getElementsByClassName("");  class="" */
+/* getElementsByClassName("");  class="" */ // NO (.) needed
 
 const fruits = document.getElementsByClassName('fruits');
 

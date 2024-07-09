@@ -17,17 +17,17 @@ const element = document.getElementById("fruits");
 const firstChild = element.firstElementChild;
 firstChild.style.backgroundColor = "red";
 
-//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
 
-// const ulElements = document.querySelectorAll("ul");
+const ulElements = document.querySelectorAll("ul");
 
-// ulElements.forEach(ulElement => {
-//     const firstChild = ulElement.firstElementChild;
-//     firstChild.style.backgroundColor = "red";
-// })
+ulElements.forEach(ulElement => {
+    const firstChild = ulElement.firstElementChild;
+    firstChild.style.backgroundColor = "red";
+})
 
 
-//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
 
 
 // ------------------- .lastElementChild ------------------- //
@@ -40,3 +40,12 @@ const lastChild = element2.lastElementChild;
 lastChild.style.backgroundColor = "green";
 
  
+//////////////////////////////////////////////////////////////////////////////////
+
+const animal = document.createElement("h1");
+
+animal.textContent = "Animals";
+animal.style.color = "red";
+animal.style.backgroundColor = "green";
+ 
+document.body.append(animal);
