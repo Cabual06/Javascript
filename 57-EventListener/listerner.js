@@ -86,3 +86,30 @@ myButton.addEventListener("mouseout", (event) => {
     box2.style.backgroundColor = "green";
     box2.textContent = "Click Me";
 })
+
+
+
+
+
+const box3 = document.getElementById("box3");
+
+box3.addEventListener("click", (event) => {
+    event.target.style.backgroundColor = "orange";
+})
+
+
+const myButton2 = document.getElementById("myButton2");
+
+myButton2.addEventListener("click", (eventlistener) => {
+    box3.style.backgroundColor = "red";
+    box3.textContent = "Clicked 2";
+})
+
+
+
+const decrease = document.getElementById("decrease");
+const increase = document.getElementById("increase");
+
+decrease.addEventListener("click", ()7t => {
+    console.log("decrease");
+});

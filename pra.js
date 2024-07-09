@@ -1,10 +1,11 @@
 
 
-class student{
+const fruits = ["apple", "banan", "orange"];
 
-    constructor(name, age){
-    this.name = name
-    this.age = age
-}
+
+fruits.forEach(display);
+
+function display(elements){
+    console.log(elements);
 }
 

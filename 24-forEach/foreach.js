@@ -30,7 +30,7 @@ numbers.forEach(square);  // Pass the square function as arguments
 numbers.forEach(display); // Pass the display function as arguments
 
 
-function double(element, index, array){   // element,index,array a  re provided
+function double(element, index, array){   // element,index,array are provided
     array[index] = element * 2;
 }
 
