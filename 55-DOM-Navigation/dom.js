@@ -49,3 +49,5 @@ animal.style.color = "red";
 animal.style.backgroundColor = "green";
  
 document.body.append(animal);
+
+

@@ -56,8 +56,9 @@ newListItem.style.backgroundColor = "lightgreen";           // ADD BACKGROUND CO
  document.getElementById("fruits").append(newListItem);     // ADD / APPEND TO FRUITS DIV
 
 
- ///////////////////////////////////////////////////
 
+
+ ///////////////////////////////////////////////////
 
  const item = document.createElement("li");
 
@@ -71,6 +72,10 @@ newListItem.style.backgroundColor = "lightgreen";           // ADD BACKGROUND CO
 //  document.body.append(item);
 
 
+
+
+///////////////////////////////////////////////////
+
 const item2 = document.createElement("li");
 
 item2.textContent = "mango";
@@ -80,3 +85,33 @@ item2.style.fontSize = "30px";
 item2.style.backgroundColor = "lightpink";
 
 document.getElementById("fruits").append(item2);
+
+
+
+
+///////////////////////////////////////////////////
+
+const item3 = document.createElement("li");
+
+item3.textContent = "grapes";
+item3.style.fontWeight = "bold";
+item3.style.fontSize = "30px";
+item3.style.backgroundColor = "violet";
+
+document.body.append(item3);
+
+document.getElementById("fruits").append(item3);
+
+
+
+///////////////////////////////////////////////////
+
+const item4 = document.createElement("li");
+
+item4.textContent = "pineapple";
+item4.id = "pineapple";
+item4.style.fontWeight = "bold";
+item4.style.fontSize = "30px";
+item4.style.backgroundColor = "yellow";
+
+document.getElementById("fruits").append(item4);
