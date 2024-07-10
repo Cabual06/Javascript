@@ -1,5 +1,5 @@
 
-
+// ADD EVENT LISTENER
 // eventlistener = Listen for specific events to create interactive web pages.
 
 // events: CLICK, MOUSEOVER, MOUSEOUT
@@ -11,12 +11,12 @@
 const myBox = document.getElementById('myBox');
 
 
-// myBox.addEventListener("click", changeColor);
+myBox.addEventListener("click", changeColor);
 
-// function changeColor(event){
-//     event.target.style.backgroundColor = "blue";
-//     event.target.textContent = "You clicked";
-// }
+function changeColor(event){
+    event.target.style.backgroundColor = "blue";
+    event.target.textContent = "You clicked";
+}
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -24,16 +24,16 @@ const myBox = document.getElementById('myBox');
 
 //-- ANOTEHR WAY -- //
 
-// myBox.addEventListener("click", function(event){
-//     event.target.style.backgroundColor = "blue";
-//     event.target.textContent = "You clicked";
-// });
+myBox.addEventListener("click", function(event){
+    event.target.style.backgroundColor = "blue";
+    event.target.textContent = "You clicked";
+});
 
 ///////////////////////////////////////////////////////////////////////
 
 
 
-//-- ARROW FUNCTION --//   NO NEED TO ENCLODE () IF YOU HAVE ONLY 1 PARAMETER
+//-- ARROW FUNCTION --//   NO NEED TO ENCLUDE () IF YOU HAVE ONLY 1 PARAMETER
 
 myBox.addEventListener("click", event => {
     event.target.style.backgroundColor = "blue";
@@ -63,15 +63,15 @@ box2.addEventListener("mouseout", (event) => {
 
 const myButton = document.getElementById("myButton");
 
-// myButton.addEventListener("mouseover", (event) => {
-//     event.target.style.backgroundColor = "red";
-//     event.target.textContent = "Hovered";
-// })
+myButton.addEventListener("mouseover", (event) => {
+    event.target.style.backgroundColor = "red";
+    event.target.textContent = "Hovered";
+})
 
-// myButton.addEventListener("mouseout", (event) => {
-//     event.target.style.backgroundColor = "green";
-//     event.target.textContent = "Click Me";
-// })
+myButton.addEventListener("mouseout", (event) => {
+    event.target.style.backgroundColor = "green";
+    event.target.textContent = "Click Me";
+})
 
 myButton.addEventListener("click", (event) => {
     box2.style.backgroundColor = "orange";
@@ -110,6 +110,14 @@ myButton2.addEventListener("click", (eventlistener) => {
 const decrease = document.getElementById("decrease");
 const increase = document.getElementById("increase");
 
-decrease.addEventListener("click", ()7t => {
+decrease.addEventListener("click", () => {
     console.log("decrease");
 });
+
+
+const box4 = document.getElementById("box4");
+
+box4.addEventListener("click", () => {
+    box4.style.backgroundColor = "green";
+    box4.textContent = "Clicked 4";
+})
